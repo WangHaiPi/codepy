@@ -17,7 +17,7 @@ It is designed for **rapid prototyping, scripting integration, and mixed-languag
 py << "print('Hello from Python')";
 py.run();
 
-⚙️ Core Features
+## ⚙️ Core Features
 Feature	Description
 Stream-based Python execution	Write Python code using << operator
 Single-line execution	py.exec("...") for quick scripts
@@ -28,7 +28,7 @@ Cross-platform	Windows (MSVC/MinGW), Linux, macOS
 Automatic encoding conversion	GBK ↔ UTF-8 (no mojibake)
 PyPI mirrors (CN-friendly)	10 built-in mirrors for fast access
 
-📦 Installation
+## 📦 Installation
 Option 1: From GitHub (immediate)
 bash
 vcpkg install https://github.com/WangHaiPi/codepy
@@ -40,7 +40,7 @@ bash
 git clone https://github.com/WangHaiPi/codepy.git
 # Copy `codepy.h` to your project
 
-🧪 Example
+## 🧪 Example
 cpp
 #include "codepy.h"
 
@@ -69,7 +69,7 @@ Value: 2
 Inline execution
 Python ready
 
-🧠 Design Goals
+## 🧠 Design Goals
 Header-only – single #include, no build steps
 
 Zero external dependencies – only requires a Python runtime in PATH
