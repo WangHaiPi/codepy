@@ -16,7 +16,7 @@ It is designed for **rapid prototyping, scripting integration, and mixed-languag
 ```cpp
 py << "print('Hello from Python')";
 py.run();
-
+'''
 ## ⚙️ Core Features
 Feature	Description
 Stream-based Python execution	Write Python code using << operator
@@ -30,18 +30,21 @@ PyPI mirrors (CN-friendly)	10 built-in mirrors for fast access
 
 ## 📦 Installation
 Option 1: From GitHub (immediate)
-bash
+```bash
 vcpkg install https://github.com/WangHaiPi/codepy
+'''
 Option 2: Official vcpkg (after PR merge)
-bash
+```bash
 vcpkg install codepy
+'''
 Option 3: Manual
-bash
+```bash
 git clone https://github.com/WangHaiPi/codepy.git
 # Copy `codepy.h` to your project
+'''
 
 ## 🧪 Example
-cpp
+```cpp
 #include "codepy.h"
 
 int main() {
@@ -60,14 +63,16 @@ int main() {
 
     return 0;
 }
+'''
 Output:
 
-text
+```text
 Value: 0
 Value: 1
 Value: 2
 Inline execution
 Python ready
+'''
 
 ## 🧠 Design Goals
 Header-only – single #include, no build steps
